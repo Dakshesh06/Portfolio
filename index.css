@@ -1,0 +1,63 @@
+body {
+  background: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-menu {
+  width: 100%;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-menu ul li {
+  list-style: none;
+  display: inline;
+  position: relative;
+  top: 10px;
+}
+
+.nav-menu ul li a {
+  float: left;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: "PT Mono", monospace;
+  font-size: 17px;
+  text-align: center;
+  width: 20%;
+}
+
+.nav-menu ul li a.icon {
+  display: none;
+}
+
+.nav-menu ul li a:hover {
+  color: orange;
+}
+
+#icon {
+  display: none;
+  color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menu ul .nav-res-ext {
+    display: none;
+  }
+  #icon {
+    display: block;
+    float: right;
+  }
+}
+
